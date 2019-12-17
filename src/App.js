@@ -1,15 +1,19 @@
 import React from 'react';
+import Nav from './Nav/Nav.js'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header>
-       <h1>Hello UtahSlim!</h1>
-       <p>This app is (clearly) under construction.</p>
-      </header>
-    </div>
-  );
+class App extends React.component {
+  
+  render() {
+    return (
+      <div className="App">
+        <Nav />
+        <main>
+      
+        </main>
+      </div>
+    );
+  }
 }
 
 export default App;
