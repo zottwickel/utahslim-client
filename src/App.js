@@ -19,16 +19,20 @@ class App extends React.Component {
 
   toggleLogin = (event) => {
     event.preventDefault()
-    this.setState({
-      login: !this.state.login
-    })
+    if (event.target === event.currentTarget) {
+      this.setState({
+        login: !this.state.login
+      })
+    }
   }
 
   toggleRegister = (event) => {
     event.preventDefault()
-    this.setState({
-      register: !this.state.register
-    })
+    if (event.target === event.currentTarget) {
+      this.setState({
+        register: !this.state.register
+      })
+    }
   }
   
   render() {

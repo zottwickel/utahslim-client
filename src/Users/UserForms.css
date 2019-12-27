@@ -2,7 +2,6 @@
   font-size: 12px;
 }
 
-
 .overlay {
   position: absolute;
   left: 0;
@@ -17,7 +16,7 @@
 
 .login_form, .register_form {
   margin-top: 50px;
-  width: 100%;
+  width: calc(100%-40px);
   box-shadow: 0 0 5px #949494;
   background-color: black;
   padding: 20px;

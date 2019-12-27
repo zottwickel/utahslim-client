@@ -3,7 +3,7 @@ import './UserForms.css'
 
 export function Login(props) {
   return (
-    <div className='overlay'>
+    <div className='overlay' onClick={e => props.toggleLogin(e)}>
       <form className='login_form' >
         <h2>Login</h2>
         <p className='user_label'>Email:</p>
@@ -21,7 +21,7 @@ export function Login(props) {
 
 export function Register(props) {
   return (
-    <div className='overlay'>
+    <div className='overlay' onClick={e => props.toggleRegister(e)}>
       <form className='register_form'>
         <p className='user_label'>Full Name:</p>
         <input className='user_input' type='text' placeholder='Your Name' />
