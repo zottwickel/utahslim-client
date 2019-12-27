@@ -1,0 +1,28 @@
+.phone_button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: green;
+  border-radius: 50%;
+  box-shadow: 0 0 5px black;
+  padding: 10px;
+}
+
+.phone_button:hover, .mail_button:hover {
+  cursor: pointer;
+}
+
+.mail_button {
+  position: fixed;
+  bottom: 85px;
+  right: 20px;
+  background-color: red;
+  border-radius: 50%;
+  box-shadow: 0 0 5px black;
+  padding: 10px;
+}
+
+.contact_icon {
+  font-size: 25px;
+  color: white;
+}

@@ -7,6 +7,7 @@ import Videos from './Videos/Videos'
 import Performances from './Performances/Performances'
 import Blog from './Blog/Blog'
 import { Login, Register } from './Users/UserForms'
+import { Phone, Mail } from './Util/Contacts'
 import './App.css';
 
 class App extends React.Component {
@@ -71,6 +72,8 @@ class App extends React.Component {
           </Switch>
           <Footer />
         </main>
+        <Mail />
+        <Phone />
       </div>
     );
   }
