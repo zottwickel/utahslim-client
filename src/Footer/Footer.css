@@ -1,0 +1,17 @@
+.footer {
+  padding: 20px;
+  border-top: 2px solid #966e24;
+}
+
+.footitem {
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+  color: #282828;
+  font-size: 40px;
+  vertical-align: top;
+}

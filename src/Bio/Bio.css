@@ -1,0 +1,26 @@
+.content_heading {
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  border-bottom: 3px solid rgb(150, 110, 36);
+}
+
+.content_subheading {
+  border-bottom: 2px solid rgb(150, 110, 36)
+}
+
+@media only screen and (min-width: 768px) {
+  .bio_flex {
+    display: flex;
+  }
+
+  .bio_flex_left {
+    width: 350%;
+  }
+
+  .bio_flex_right {
+    border-left: 2px solid rgb(150, 110, 36, 0.5);
+    padding-left: 10px;
+    margin-left: 10px;
+  }
+}

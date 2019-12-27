@@ -1,31 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Logins from './Logins'
+import './Nav.css'
 
-class Nav extends React.component {
-  static defaultProps = {
-    isLoggedIn: false,
-  }
-  
+class Nav extends React.Component {
+
   render() {
     return (
       <div className="nav">
         <nav>
-          <Link to="/"><h1 className="nav_title">Utah Slim</h1></Link>
-          <div className="user_handler">
-            { if (!props.isLoggedIn) {
-                return (
-                  <Link to="/login"><span className="login_link">Login</span></Link>
-                  <Link to="/register"><span className="register_link">Register<span></Link>
-                )
-              } else {
-                return <Link to="/logout"><span className="login_link">Logout</span></Link>
-              }}
-          </div>
-          <ul>
-            <li><Link to="/"><span>Bio</span></Link></li>
-            <li><Link to="/videos"><span>Videos</span></Link></li>
-            <li><Link to="/performances"><span>Performances</span></Link></li>
-            <li><Link to="/blog"><span>Blog</span></Link></li>
+          <Link className="nav_title" to={'/'}><h1>Utah Slim</h1></Link>
+          <Logins isLoggedIn={this.props.isLoggedIn} toggleRegister={this.props.toggleRegister} toggleLogin={this.props.toggleLogin} />
+          <ul className='navlink_list'>
+            <li className='navlink'><Link to={'/'}><span>Bio</span></Link></li>
+            <li className='navlink'><Link to={'/videos'}><span>Videos</span></Link></li>
+            <li className='navlink'><Link to={'/performances'}><span>Performances</span></Link></li>
+            <li className='navlink'><Link to={'/blog'}><span>Blog</span></Link></li>
           </ul>
         </nav>
       </div>

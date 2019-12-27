@@ -1,0 +1,24 @@
+.App {
+  background-color: #966e24;
+}
+
+.outside_link {
+  color: #ff6d1f;
+  text-decoration: none;
+}
+
+.content {
+  background: rgb(223,189,75);
+  background: linear-gradient(90deg, rgba(223,189,75,1) 0%, rgba(255,215,80,1) 35%, rgba(255,229,143,1) 100%);
+  padding: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  
+  .content {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}

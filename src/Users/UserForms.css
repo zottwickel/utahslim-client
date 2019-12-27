@@ -1,0 +1,55 @@
+.temp_note {
+  font-size: 12px;
+}
+
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(96,96,96, 0.5);
+  z-index: 50;
+}
+
+.login_form, .register_form {
+  margin-top: 50px;
+  width: 100%;
+  box-shadow: 0 0 5px #949494;
+  background-color: black;
+  padding: 20px;
+  z-index: 51;
+  color: white;
+  text-align: center;
+}
+
+.user_input {
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid grey;
+  background-color:  #383838;
+  color: white;
+}
+
+.user_button {
+  margin: 20px 20px;
+  padding: 5px 10px;
+  border: 2px solid grey;
+  background-color: #966e24;
+  color: white;
+}
+
+.user_button:hover {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .login_form, .register_form {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

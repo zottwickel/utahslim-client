@@ -1,0 +1,29 @@
+.perform_item {
+  list-style-type: none;
+  width: 80%;
+}
+
+.p_list_content {
+  margin: 0
+}
+
+.p_list_head {
+  border-bottom: 2px solid rgb(150, 110, 36);
+  margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .perform_flex {
+    display: flex;
+  }
+
+  .perform_left {
+    width: 100%;
+  }
+  .perform_right {
+    width: 320px;
+    border-left: 2px solid rgb(150, 110, 36, 0.5);
+    padding-left: 10px;
+    margin-left: 10px;
+  }
+}
