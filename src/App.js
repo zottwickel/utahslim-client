@@ -8,72 +8,54 @@ import Performances from './Performances/Performances'
 import Blog from './Blog/Blog'
 import { Login, Register } from './Users/UserForms'
 import { Phone, Mail } from './Util/Contacts'
+import LoginContext from './contexts/LoginContext'
+import { GigsProvider } from './contexts/GigsContext'
 import './App.css';
 
 class App extends React.Component {
-  state = {
-    login: false,
-    register: false,
-    isLoggedIn: false,
-  }
-
-  toggleLogin = (event) => {
-    event.preventDefault()
-    if (event.target === event.currentTarget) {
-      this.setState({
-        login: !this.state.login
-      })
-    }
-  }
-
-  toggleRegister = (event) => {
-    event.preventDefault()
-    if (event.target === event.currentTarget) {
-      this.setState({
-        register: !this.state.register
-      })
-    }
-  }
+  static contextType = LoginContext
   
   render() {
     return (
       <div className="App">
-        {this.state.login ? <Login toggleLogin={this.toggleLogin} toggleRegister={this.toggleRegister} /> : null}
-        {this.state.register ? <Register toggleRegister={this.toggleRegister} /> : null}      
-        <Nav isLoggedIn={this.state.isLoggedIn} toggleRegister={this.toggleRegister} toggleLogin={this.toggleLogin} />
+        {this.context.login ? <Login /> : null}
+        {this.context.register ? <Register /> : null}      
+        <Nav />
         <main className='content'>
-          <Switch>
-            <Route 
-              exact path='/bio'
-              render={(props) => {
-                return <Bio {...props} />
-              }}
-            />
-            <Route
-              exact path='/'
-              render={(props) => {
-                return <Bio {...props} />
-              }}
-            />
-            <Route
-              exact path='/videos'
-              render={(props) => {
-                return <Videos {...props} />
-              }}
-            />
-            <Route
-              exact path='/performances'
-              render={(props) => {
-                return <Performances {...props} />
-              }}
-            />
-            <Route
-              path='/blog'
-              render={(props) => {
-                return <Blog {...props} />
-              }}
-            />
-          </Switch>
+          <GigsProvider>
+            <Switch>
+              <Route 
+                exact path='/bio'
+                render={(props) => {
+                  return <Bio {...props} />
+                }}
+              />
+              <Route
+                exact path='/'
+                render={(props) => {
+                  return <Bio {...props} />
+                }}
+              />
+              <Route
+                exact path='/videos'
+                render={(props) => {
+                  return <Videos {...props} />
+                }}
+              />
+              <Route
+                exact path='/performances'
+                render={(props) => {
+                  return <Performances {...props} />
+                }}
+              />
+              <Route
+                path='/blog'
+                render={(props) => {
+                  return <Blog {...props} />
+                }}
+              />
+            </Switch>
+          </GigsProvider>
           <Footer />
         </main>
         <Mail />

@@ -18,12 +18,12 @@ class Bio extends React.Component {
             <h3 className='content_subheading'>IAMA Member</h3>
             <p>Utah Slim is a member and supporter of the Intermountain Acoustic Music Association. He contributes to and is always willing to lend a helping hand to his fellow members. <a className='outside_link' href='http://www.iamaweb.org/wp/'>Check out IAMA online!</a></p>
             <h3 className='content_subheading'>Awards</h3>
-            <p>Songwriting competition #1</p>
-            <p>Songwriting competition #2</p>
-            <p>Songwriting competition #3</p>
+            <p>Walnut Valley Festival 2011 NewSong for "Sister San Rafael"</p>
+            <p>Walnut Valley Festival 2015 NewSong for "This Rock Must Roll"</p>
+            <p>Walnut Valley Festival 2018 NewSong for "Bears Ears"</p>
             <h3 className='content_subheading'>Albums</h3>
-            <p>Water Wheel</p>
-            <p>Introducing Utah Slim</p>
+            <p className='italics'>Water Wheel</p>
+            <p className='italics'>Introducing Utah Slim</p>
           </section>
         </div>
       </div>

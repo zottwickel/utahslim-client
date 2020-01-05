@@ -8,7 +8,7 @@ class Videos extends React.Component {
       <div className="Videos">
         <h2 className='content_heading'>Videos</h2>
         <div className='video_flex'>
-          <iframe className='video' title="video1" src="https://www.youtube.com/embed/CIr9k-0roo4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe className='video' title="video1" src="https://www.youtube.com/embed/CIr9k-0roo4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
       </div>
     )
