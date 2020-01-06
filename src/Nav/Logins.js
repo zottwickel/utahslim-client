@@ -6,7 +6,7 @@ function Logins(props) {
   function handleLogout(event, context) {
     event.preventDefault()
     TokenService.clearAuthToken()
-    context.beginSession()
+    context.endSession()
   }
   return (
     <LoginContext.Consumer>

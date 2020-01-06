@@ -16,7 +16,6 @@ function handleLoginJwtAuth(event, context) {
   })
     .then(res => {
       TokenService.saveAuthToken(res.authToken)
-      context.toggleLogin(event)
       context.beginSession()
     })
     .catch(res => {
@@ -49,17 +48,17 @@ function handleRegister(event, context) {
 export function Login(props) {
     return (
       <LoginContext.Consumer>
-        {value => { return (
+        {context => { return (
           <div className='overlay' >
-            <form className='login_form' onSubmit={e => handleLoginJwtAuth(e, value)}>
+            <form className='login_form' onSubmit={e => handleLoginJwtAuth(e, context)}>
               <h2>Login</h2>
               <p className='user_label'>Email:</p>
               <input className='user_input' name='email' id='email' type='text' placeholder='yourname@domain.com' />
               <p className='user_label'>Password:</p>
               <input className='user_input' name='password' id='password' type='password' placeholder='Your Password' /><br />
               <input className='user_button' type='submit' value='login' />
-              <button className='user_button' onClick={e => value.toggleLogin(e)}>Cancel</button>
-              <p className='user_label'>Not a user? <button className='user_button' onClick={e => {value.toggleLogin(e); value.toggleRegister(e)}}>Sign Up!</button></p>
+              <button className='user_button' onClick={e => context.toggleLogin(e)}>Cancel</button>
+              <p className='user_label'>Not a user? <button className='user_button' onClick={e => {context.toggleLogin(e); context.toggleRegister(e)}}>Sign Up!</button></p>
               <span className='temp_note'>Note: users have not been set up yet. Please check in later for the final product!</span>
             </form>
           </div>
@@ -72,8 +71,8 @@ export function Login(props) {
 export function Register(props) {
   return (
     <LoginContext.Consumer>
-      {value => { return (
-        <div className='overlay' onClick={e => value.toggleRegister(e)}>
+      {context => { return (
+        <div className='overlay' onClick={e => context.toggleRegister(e)}>
           <form className='register_form'>
             <p className='user_label'>Full Name:</p>
             <input className='user_input' name='full_name' type='text' placeholder='Your Name' />
@@ -85,8 +84,8 @@ export function Register(props) {
             <input className='user_input' name='password' type='password' placeholder='Your Password' />
             <p className='user_label'>Confirm Password:</p>
             <input className='user_input' type='password' placeholser='Retype Password' /><br />
-            <button className='user_button' type='submit' onClick={e => handleRegister(e, value)}>Submit</button>
-            <button className='user_button' onClick={e => value.toggleRegister(e)}>Cancel</button><br />
+            <button className='user_button' type='submit' onClick={e => handleRegister(e, context)}>Submit</button>
+            <button className='user_button' onClick={e => context.toggleRegister(e)}>Cancel</button><br />
             <span className='temp_note'>Note: users have not been set up yet. Please check in later for the final product!</span>
           </form>
         </div>
