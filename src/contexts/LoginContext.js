@@ -4,6 +4,9 @@ const LoginContext = React.createContext({
   isLoggedIn: false,
   login: false,
   register: false,
+  error: null,
+  setError: () => {},
+  clearError: () => {},
   beginSession: () => {},
   toggleLogin: () => {},
   toggleRegister: () => {}
@@ -16,6 +19,16 @@ export class LoginProvider extends Component {
     isLoggedIn: false,
     login: false,
     register: false,
+    error: null,
+  }
+
+  setError = (error) => {
+    console.error(error)
+    this.setState({ error })
+  }
+
+  clearError = () => {
+    this.setState({ error: null })
   }
 
   beginSession = () => {
@@ -41,9 +54,12 @@ export class LoginProvider extends Component {
       isLoggedIn: this.state.isLoggedIn,
       login: this.state.login,
       register: this.state.register,
+      error: this.state.error,
       beginSession: this.beginSession,
       toggleLogin: this.toggleLogin,
       toggleRegister: this.toggleRegister,
+      setError: this.setError,
+      clearError: this.clearError
     }
 
     return (
