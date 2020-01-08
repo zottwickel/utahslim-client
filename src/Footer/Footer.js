@@ -10,9 +10,9 @@ class Footer extends React.Component {
     return (
       <footer className='footer'>
         <p className='footitem'>Website by Scott McKell</p>
-        <a className='footitem' href="https://github.com/zottwickel"><FontAwesomeIcon className='icon port' icon={faGithub} /></a>
-        <a className='footitem' href="https://www.linkedin.com/in/scott-mckell/"><FontAwesomeIcon className='icon port' icon={faLinkedin} /></a>
-        <a className='footitem' href="https://zottwickel.github.io/portfolio/"><FontAwesomeIcon className='icon port' icon={faPalette} /></a>
+        <a className='footitem' rel='noopener noreferrer' target="_blank" href="https://github.com/zottwickel"><FontAwesomeIcon className='icon port' icon={faGithub} /></a>
+        <a className='footitem' rel='noopener noreferrer' target="_blank" href="https://www.linkedin.com/in/scott-mckell/"><FontAwesomeIcon className='icon port' icon={faLinkedin} /></a>
+        <a className='footitem' rel='noopener noreferrer' target="_blank" href="https://zottwickel.github.io/portfolio/"><FontAwesomeIcon className='icon port' icon={faPalette} /></a>
       </footer>
     )
   }

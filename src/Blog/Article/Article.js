@@ -5,11 +5,17 @@ import formatDate from '../../services/format-date'
 import { Link } from 'react-router-dom'
 
 class Article extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      comment: null,
+      disabled: true,
+    }
+  }
   static contextType = ArticleContext
+  
 
-  componentDidMount() {
-    const { article_id } = this.props.match.params
-    this.context.clearError()
+  callApi(article_id) {
     ArticleApiService.getArticle(article_id)
       .then(this.context.setArticle)
       .catch(this.context.setError)
@@ -18,8 +24,41 @@ class Article extends React.Component {
       .catch(this.context.setError)
   }
 
+  componentDidMount() {
+    const { article_id } = this.props.match.params
+    this.context.clearError()
+    this.callApi(article_id)
+  }
+
   componentWillUnmount() {
     this.context.clearArticle()
+  }
+
+  handleComment(event) {
+    event.preventDefault()
+    const text = event.target.text.value
+    const { article_id } = this.props.match.params
+
+    ArticleApiService.postComment(article_id, text)
+      .then(res => {
+        this.callApi(article_id)
+      })
+      .catch(this.context.setError)
+  }
+
+  validateText(event) {
+    const commentText = event.target.value
+    if (commentText.length < 1 || commentText.length > 150) {
+      this.setState({
+        comment: 'Comment must be between 1 and 150 characters long.',
+        disabled: true
+      })
+    } else {
+      this.setState({
+        comment: null,
+        disabled: false
+      })
+    }
   }
 
   render() {
@@ -27,6 +66,7 @@ class Article extends React.Component {
     const articleComments = this.context.comments
     return (
       <div className='article'>
+        {this.props.isLoggedIn ? <Link className='a_compose_link' to='/blog/compose'>Compose new article</Link>: null }
         <h3 className='a_subheading'>{thisArticle.title}</h3>
         <div className='a_flex'>
           <div className='a_flex_left'>
@@ -42,7 +82,7 @@ class Article extends React.Component {
             <ul className='c_list'>
               {articleComments.map(comment => {
                 return (
-                  <li className='content_subheading c_item'>
+                  <li key={comment.comment_id} className='content_subheading c_item'>
                     <p className='c_content'>{comment.text}</p>
                     <p className='c_content'>By: {comment.user.user_name}</p>
                     <p className='c_content'>At: {formatDate(comment.date_created)}</p>
@@ -50,6 +90,12 @@ class Article extends React.Component {
                 )
               })}
             </ul>
+            <form onSubmit={e => this.handleComment(e)}>
+              <p className='c_content'>Your Comment:</p>
+              <textarea className='c_text_field' name='text' id='text' placeholder={this.props.isLoggedIn ? 'Your comment here' : 'You must be logged in to comment'} onChange={e => this.validateText(e)} /><br />
+              {this.state.comment ? <p className='c_invalid'>{this.state.comment}</p> : null }
+              <input className='blog_button' disabled={!(this.props.isLoggedIn && !this.state.disabled)} type='submit' id='submit' value='Submit' />
+            </form>
           </div>
         </div>
       </div>

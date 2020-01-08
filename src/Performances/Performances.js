@@ -33,7 +33,7 @@ class Performances extends React.Component {
                         <h3 className='p_list_head'>{gig.gig_title}</h3>
                         <p className='p_list_content'>Date: {formatDate(gig.gig_date)}</p>
                         <p className='p_list_content'>Price: ${gig.price}</p>
-                        <p className='p_list_content'>Location: <a className='outside_link' href={locationUrl}>{gig.location}</a></p>
+                        <p className='p_list_content'>Location: <a rel='noopener noreferrer' target="_blank" className='outside_link' href={locationUrl}>{gig.location}</a></p>
                         <p className='p_list_content'>Description: {gig.description}</p>
                       </li>
                     )

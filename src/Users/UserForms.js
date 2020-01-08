@@ -57,7 +57,7 @@ export function Login(props) {
               {context.error ? <p className='invalid'>{context.error}</p> : null}
               <input className='user_button' type='submit' value='Login' />
               <button className='user_button' onClick={e => context.toggleLogin(e)}>Cancel</button>
-              <p className='user_label'>Not a user? <button className='user_button' onClick={e => {context.toggleLogin(e); context.toggleRegister(e)}}>Sign Up!</button></p>
+              <p className='user_label'>New to the site? <button className='user_button' onClick={e => {context.toggleLogin(e); context.toggleRegister(e)}}>Sign Up!</button></p>
             </form>
           </div>
         )}}
@@ -82,7 +82,7 @@ export function Register(props) {
     }
   }
   function validateEmail(e) {
-    const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     if (!emailRegex.test(e.target.value)) {
       setEmail('Email must be valid')
     } else {
@@ -90,7 +90,7 @@ export function Register(props) {
     }
   }
   function validatePassword(e) {
-    const passwordRegex = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&])[\S]+/
+    const passwordRegex = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&])[\S]+/
     const newPassword = e.target.value
     if (newPassword.length < 8) {
       setPassword('Password must be longer than 8 characters')

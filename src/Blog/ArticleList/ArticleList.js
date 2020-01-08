@@ -13,9 +13,16 @@ class ArticleList extends React.Component {
       .catch(this.context.setError)
   }
 
+  componentDidUpdate() {
+    ArticleApiService.getArticles()
+      .then(this.context.setArticles)
+      .catch(this.context.setError)
+  }
+
   render() {
     return (
       <div className='article_list'>
+        {this.props.isLoggedIn ? <Link className='a_compose_link' to='/blog/compose'>Compose new article</Link>: null }
         <ul className='articles_list'>
           {this.context.articles.map(article => {
             const articlePath = `/blog/${article.article_id}`

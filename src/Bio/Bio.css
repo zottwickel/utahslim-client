@@ -13,6 +13,33 @@
   font-style: italic;
 }
 
+.profile_photo {
+  height: 280px;
+  width: 280px;
+  margin-top: 10px;
+  margin-right: 10px;
+  float: left;
+}
+
+.partnered_photo {
+  height: 140px;
+  width: 140px;
+  margin: 10px 10px 0 0;
+  float: left;
+}
+
+.b_content {
+  margin-top: 10px;
+}
+
+.last {
+  margin-bottom: 10px;
+}
+
+.section_heading {
+  margin: 10px 0 0 10px;
+}
+
 @media only screen and (min-width: 768px) {
   .bio_flex {
     display: flex;
