@@ -29,7 +29,7 @@ class Performances extends React.Component {
                   {gigs.map(gig => {
                     const locationUrl = `https://www.google.com/maps/search/?api=1&query=${gig.location.split(' ').join('+')}`
                     return (
-                      <li key={gig.id} className='perform_item'>
+                      <li key={gig.gig_id} className='perform_item'>
                         <h3 className='p_list_head'>{gig.gig_title}</h3>
                         <p className='p_list_content'>Date: {formatDate(gig.gig_date)}</p>
                         <p className='p_list_content'>Price: ${gig.price}</p>
