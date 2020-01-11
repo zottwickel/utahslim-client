@@ -34,7 +34,7 @@ class ArticleList extends React.Component {
                 <p className='a_list_content'>Author: {article.user.full_name}</p>
                 <p className='a_list_content'>Updated: {formatDate(article.date_modified)}</p>
                 <p className='a_list_content'>Comments: {article.number_of_comments}</p>
-                <p className='a_list_content'>{article.content.substring(0, 15) + '...'}</p>
+                <p className='a_list_content'>{article.content.substring(0, 40) + '...'}</p>
               </li>
             )
           })}

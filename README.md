@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This is the client-side code for the website www.utahslim.com. It was made in React.js and is hosted on Zeit. This is the source code for this app.
 
+Tech used: HTML, JavaScript, CSS, React.js, VSCode, Zeit, create-react-app, Git, Chrome DevTools, Font Awesome.
+
 ## Features
 
 Many of these features are contained within nested React routes that render these components in a logical way based on where the user will navigate. It renders differently depending on if users are logged in or not, and will load a specific page if the one of the URL routes is initially chosen.
