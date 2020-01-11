@@ -85,7 +85,7 @@
   }
 }
 
-@supports (-ms-accelerator: true) {
+@supports (-ms-ime-align: auto) {
   .navlink_list {
     justify-content: space-around;
   }
