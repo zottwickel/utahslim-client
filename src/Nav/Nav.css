@@ -84,3 +84,15 @@
     font-size: 30px;
   }
 }
+
+@supports (-ms-accelerator: true) {
+  .navlink_list {
+    justify-content: space-around;
+  }
+
+  @media only screen and (min-width: 584px) {
+    .nav {
+      background-size: 150%;
+    }
+  }
+}
