@@ -3,6 +3,7 @@ import BlogContext from '../../contexts/BlogContext'
 import ArticleApiService from '../../services/article-api-service'
 import formatDate from '../../services/format-date'
 import { Link } from 'react-router-dom'
+import Loading from '../../Util/Loading'
 
 class ArticleList extends React.Component {
   static contextType = BlogContext
@@ -22,6 +23,7 @@ class ArticleList extends React.Component {
   render() {
     return (
       <div className='article_list'>
+        {this.context.articles.length === 0 ? <Loading /> : null }
         {this.props.isLoggedIn ? <Link className='a_compose_link' to='/blog/compose'>Compose new article</Link>: null }
         <ul className='articles_list'>
           {this.context.articles.map(article => {

@@ -11,15 +11,16 @@ class Bio extends React.Component {
           <section className='bio_flex_left'>
             <h4 className='section_heading'>About Utah Slim</h4>
             <img className='profile_photo' src={require('../images/rex-rocks.jpg')} alt='Singer/Songwriter Utah Slim' align='top' />
-            <p className='b_content'>Rex Seaburry AKA Utah Slim is a singer songwriter hailing from Salt Lake City, Utah. He is a great guitarist, storyteller, and singer who sings songs evocative of the American four-corners desert. His fingerpicking style is both uniqe and delightful. The images that come up when he plays are evocative of the great deserts in which he has traveled and lived.</p>
-            <p className='b_content'>Utah Slim is currently available to enthrall audiences both big and small in any venue that you need him. He is joined by his friends as bandleader, and will play both originals and cover tunes.</p>
+            <p className='b_content'>Rex Seaburry AKA Utah Slim is a singer songwriter hailing from Salt Lake City, Utah. He is a great guitarist, storyteller, and singer who sings songs about the American four-corners desert. His fingerpicking style is both uniqe and delightful. The images that come up when he plays are evocative of the great deserts in which he has traveled and lived.</p>
+            <p className='b_content'>Utah Slim is currently available to enthrall audiences both big and small in any venue that you need him. Utah Slim is now playing with a ragtag team called The Desert Poets. The Desert Poets inlcude artists from far and wide who each add their own uniqe element to the group. While Slim can handle a set on his own, we are now currently working as a group.</p>
             <p className='b_content'>Go ahead and reach out to Slim via his <a className='outside_link' href='mailto:utahslim11@gmail.com'>email</a>, or reach out via text/call at <a className='outside_link' href='tel:801-649-5097'>801-649-5097</a>. He would love to get in touch with you about how to best fill your musical needs.</p>
-            <h3 className='content_subheading'>Partnered artists</h3>
+            <p className='b_content'>Please take a look at our ever-growing videos section. We are currently in the process of recording, editing, and uploading more videos for you to check us out and see what we can do.</p>
+            <h3 className='content_subheading'>Introducing the Desert Poets</h3>
             <h4 className='section_heading'>Scott McKell</h4>
             <img className='partnered_photo' src={require('../images/scott-profile.jpg')} alt='Scott McKell with a saxophone' />
             <p className='b_content'>Scott is a classically and jazzically trained saxophonist who sits in with Utah Slim on his performances. He adds lead lines and solos with his saxophone and sometimes other instruments. His passionate, exciting playing is smooth and playful, as well as sensitive. Scott also sings vocal harmonies and adds a touch of color with his voice.</p>
             <p className='b_content'>Utah Slim will bring Scott along to play with him to play in any situation you would like. With exprience playing in many situations, Scott is able to support Slim's imagery and energy by adding what Slim calls "curly cues" to originals and to familiar cover songs.</p>
-            <h4>More partnered artist profiles coming soon!</h4>
+            <h4>More Desert Poets profiles coming soon!</h4>
           </section>
           <section className='bio_flex_right'>
             <h3 className='content_subheading'>IAMA Member</h3>

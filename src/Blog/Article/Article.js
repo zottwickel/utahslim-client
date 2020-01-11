@@ -3,6 +3,7 @@ import ArticleContext from '../../contexts/ArticleContext'
 import ArticleApiService from '../../services/article-api-service'
 import formatDate from '../../services/format-date'
 import { Link } from 'react-router-dom'
+import Loading from '../../Util/Loading'
 
 class Article extends React.Component {
   constructor(props) {
@@ -66,6 +67,7 @@ class Article extends React.Component {
     const articleComments = this.context.comments
     return (
       <div className='article'>
+        {!thisArticle ? <Loading /> : null }
         {this.props.isLoggedIn ? <Link className='a_compose_link' to='/blog/compose'>Compose new article</Link>: null }
         <h3 className='a_subheading'>{thisArticle.title}</h3>
         <div className='a_flex'>

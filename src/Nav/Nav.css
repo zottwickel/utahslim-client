@@ -53,6 +53,10 @@
   color: white;
 }
 
+.smaller {
+  font-size: 20px;
+}
+
 @media only screen and (min-width: 584px) {
 
   .nav_title {
@@ -74,5 +78,9 @@
   .navlink:hover {
     background: rgb(150, 110, 36, 0.8);
     border-bottom: 3px solid #966e24;
+  }
+
+  .smaller {
+    font-size: 30px;
   }
 }

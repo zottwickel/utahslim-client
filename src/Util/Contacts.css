@@ -14,7 +14,7 @@
 
 .mail_button {
   position: fixed;
-  bottom: 85px;
+  bottom: 150px;
   right: 20px;
   background-color: red;
   border-radius: 50%;
@@ -25,4 +25,14 @@
 .contact_icon {
   font-size: 25px;
   color: white;
+}
+
+.sms_button {
+  position: fixed;
+  bottom: 85px;
+  right: 20px;
+  background-color: blue;
+  border-radius: 50%;
+  box-shadow: 0 0 5px black;
+  padding: 10px;
 }

@@ -140,7 +140,9 @@ export function Register(props) {
             {password ? <p className='invalid'>{password}</p> : null }
             <p className='user_label'>Confirm Password:</p>
             <input className='user_input' type='password' placeholder='Confirm Password' onChange={e => checkPasswordMatch(e)} /><br />
-            {matchPassword ? <p className='invalid'>{matchPassword}</p> : null }
+            {matchPassword ? <p className='invalid'>{matchPassword}</p> : null }<br />
+            <input type='checkbox' id='check' name='check' value='check' required />
+            <label htmlFor='check'>I certify that I am over 18 years of age.</label><br />
             <input className='user_button' type='submit' value='Submit' disabled={!validated} />
             <button className='user_button' onClick={e => context.toggleRegister(e)}>Cancel</button><br />
           </form>

@@ -11,9 +11,11 @@
   margin-bottom: 10px;
 }
 
-.shadowVideo {
-  background-color: #966e24;
+.v_text {
+  margin: 0 0 5px 0;
+  text-align: center;
+}
+
+.video_box {
   width: 280px;
-  height: 150px;
-  margin-bottom: 10px;
 }

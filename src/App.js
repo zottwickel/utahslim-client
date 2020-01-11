@@ -7,7 +7,7 @@ import Videos from './Videos/Videos'
 import Performances from './Performances/Performances'
 import Blog from './Blog/Blog'
 import { Login, Register } from './Users/UserForms'
-import { Phone, Mail } from './Util/Contacts'
+import { Phone, Mail, Sms } from './Util/Contacts'
 import LoginContext from './contexts/LoginContext'
 import { GigsProvider } from './contexts/GigsContext'
 import './App.css';
@@ -63,6 +63,7 @@ class App extends React.Component {
         </main>
         <Mail />
         <Phone />
+        <Sms />
       </div>
     );
   }

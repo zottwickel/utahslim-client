@@ -3,6 +3,7 @@ import config from '../config'
 import GigsContext from '../contexts/GigsContext'
 import GigApiService from '../services/gigs-api-service'
 import formatDate from '../services/format-date'
+import Loading from '../Util/Loading'
 import './Performances.css'
 
 class Performances extends React.Component {
@@ -22,6 +23,7 @@ class Performances extends React.Component {
         <h2 className='content_heading'>Performances</h2>
         <div className='perform_flex'>
           <section className='perform_left'>
+            {gigs.length === 0 ? <Loading /> : null }
             {error 
               ? <p className='error'>There was an error, please try again.</p>
               : (
