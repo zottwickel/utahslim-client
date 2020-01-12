@@ -23,12 +23,23 @@ class Bio extends React.Component {
             <h4>More Desert Poets profiles coming soon!</h4>
           </section>
           <section className='bio_flex_right'>
-            <h3 className='content_subheading'>IAMA Member</h3>
-            <p>Utah Slim is a member and supporter of the Intermountain Acoustic Music Association. He contributes to and is always willing to lend a helping hand to his fellow members. <a rel='noopener noreferrer' target="_blank" className='outside_link' href='http://www.iamaweb.org/wp/'>Check out IAMA online!</a></p>
-            <h3 className='content_subheading'>Awards</h3>
-            <p>Walnut Valley Festival 2011 NewSong for "Sister San Rafael"</p>
-            <p>Walnut Valley Festival 2015 NewSong for "This Rock Must Roll"</p>
-            <p>Walnut Valley Festival 2018 NewSong for "Bears Ears"</p>
+          <h3 className='content_subheading'>Previous concerts</h3>
+            <h4 className='b_heading'>Walnut Valley Festival</h4>
+            <p className='b_info'>Winfield, KS for NewSong stage #2</p>
+            <h4 className='b_heading'>Summerfest</h4>
+            <p className='b_info'>Logan, UT featuring Sycamore Slim</p>
+            <h4 className='b_heading'>Rim Rock Patio</h4>
+            <p className='b_info'>Torrey, UT featuring Sycamore Slim (see video)</p>
+            <h4 className='b_heading'>Earthfest Star Parties</h4>
+            <p className='b_info'>Kanab, UT</p>
+            <h4 className='b_heading'>Harvest Days</h4>
+            <p className='b_info'>Capitol Reef National Park</p>
+            <h4 className='b_heading'>IAMA Local Concert Series</h4>
+            <p className='b_info'>Salt Lake City, UT (see video)</p>
+            <h4 className='b_heading'>Utah State Fair</h4>
+            <p className='b_info'>Salt Lake City, UT featuring Sycamore Slim</p>
+            <h4 className='b_heading'>Feldman's Deli</h4>
+            <p className='b_info'>Salt Lake City, UT featuring Scott McKell</p>
             <h3 className='content_subheading'>Albums</h3>
             <p className='italics'>Water Wheel</p>
             <p className='italics'>Introducing Utah Slim</p>
