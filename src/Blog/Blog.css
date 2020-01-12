@@ -63,6 +63,18 @@
   margin-left: 15px;
 }
 
+.delete_button:hover {
+  cursor: pointer;
+}
+
+.delete_button {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border: 2px solid grey;
+  background-color: #964824;
+  color: white;
+}
+
 .blog_button:hover {
   cursor: pointer;
 }

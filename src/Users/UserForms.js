@@ -15,7 +15,7 @@ function handleLoginJwtAuth(event, context) {
     password: password.value
   })
     .then(res => {
-      TokenService.saveAuthToken(res.authToken)
+      TokenService.saveAuthToken(res.authToken, res.user_id)
       context.beginSession()
     })
     .catch(res => {

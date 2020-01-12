@@ -37,11 +37,13 @@ class Article extends React.Component {
 
   handleComment(event) {
     event.preventDefault()
+    event.persist()
     const text = event.target.text.value
     const { article_id } = this.props.match.params
 
     ArticleApiService.postComment(article_id, text)
       .then(res => {
+        event.target.text.value = ''
         this.callApi(article_id)
       })
       .catch(this.context.setError)
@@ -60,6 +62,16 @@ class Article extends React.Component {
         disabled: false
       })
     }
+  }
+
+  handleDeleteComment(event, comment_id) {
+    event.preventDefault()
+    const { article_id } = this.props.match.params
+    ArticleApiService.deleteComment(comment_id)
+      .then(res => {
+        this.callApi(article_id)
+      })
+      .catch(this.context.setError)
   }
 
   render() {
@@ -88,6 +100,7 @@ class Article extends React.Component {
                     <p className='c_content'>{comment.text}</p>
                     <p className='c_content'>By: {comment.user.user_name}</p>
                     <p className='c_content'>At: {formatDate(comment.date_created)}</p>
+                    {(window.sessionStorage.getItem('user_id') === comment.user.user_id) ? <button className='delete_button' onClick={e => this.handleDeleteComment(e, comment.comment_id)}>Delete</button> : null }
                   </li>
                 )
               })}

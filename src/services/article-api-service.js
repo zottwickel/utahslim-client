@@ -71,14 +71,11 @@ const ArticleApiService = {
   deleteComment(comment_id) {
     return fetch(`${config.API_ENDPOINT}/comments/${comment_id}`, {
       method: 'DELETE',
-      headers: {
-        'Authorization': `bearer ${TokenService.getAuthToken()}`
-      }
     })
       .then(res =>
         (!res.ok)
           ? res.json().then(e => Promise.reject(e))
-          : res.json()
+          : null
       )
   },
 }
