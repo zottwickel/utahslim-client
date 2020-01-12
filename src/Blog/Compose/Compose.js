@@ -25,7 +25,11 @@ class Compose extends React.Component {
       content.value
     )
       .then(
-        this.setState({ toArticles: true })
+        ArticleApiService.getArticles()
+          .then(this.context.setArticles)
+          .then(this.setState({ toArticles: true }))
+          .catch(this.context.setError)
+        
       )
       .catch(err => this.setState({ error: err }))
   }

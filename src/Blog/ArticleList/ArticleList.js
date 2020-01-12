@@ -14,12 +14,6 @@ class ArticleList extends React.Component {
       .catch(this.context.setError)
   }
 
-  componentDidUpdate() {
-    ArticleApiService.getArticles()
-      .then(this.context.setArticles)
-      .catch(this.context.setError)
-  }
-
   render() {
     return (
       <div className='article_list'>
