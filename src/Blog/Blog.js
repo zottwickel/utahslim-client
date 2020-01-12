@@ -14,18 +14,22 @@ class Blog extends React.Component {
       <div className='blog'>
         <h2 className='content_heading'>Blog</h2>
         <Switch>
+          {/*
           <Route 
             exact path='/blog/compose'
             render={(props) => <Compose {...props} isLoggedIn={this.context.isLoggedIn} />}
           />
+          */}
           <Route 
             exact path='/blog'
             render={(props) => <ArticleList {...props} isLoggedIn={this.context.isLoggedIn} />}
           />
+          {/*
           <Route
             exact path='/blog/:article_id'
             render={(props) => <Article {...props} isLoggedIn={this.context.isLoggedIn} />}
           />
+          */}
         </Switch>
       </div>
     )
