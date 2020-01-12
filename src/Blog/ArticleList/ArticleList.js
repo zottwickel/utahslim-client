@@ -8,6 +8,7 @@ import Loading from '../../Util/Loading'
 class ArticleList extends React.Component {
   static contextType = BlogContext
 
+  /*
   componentDidMount() {
     ArticleApiService.getArticles()
       .then(this.context.setArticles)
@@ -19,11 +20,12 @@ class ArticleList extends React.Component {
       .then(this.context.setArticles)
       .catch(this.context.setError)
   }
+  */
 
   render() {
     return (
       <div className='article_list'>
-        {this.context.articles.length === 0 ? <Loading /> : null }
+        {this.context.articles.length === 0 ? <p>A list of Blog Articles will go here.</p> : null }
         {this.props.isLoggedIn ? <Link className='a_compose_link' to='/blog/compose'>Compose new article</Link>: null }
         <ul className='articles_list'>
           {this.context.articles.map(article => {

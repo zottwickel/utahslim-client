@@ -8,12 +8,13 @@ import './Performances.css'
 
 class Performances extends React.Component {
   static contextType = GigsContext
-  
+  /*
   componentDidMount() {
     GigApiService.getGigs()
       .then(this.context.setGigs)
       .catch(this.context.setError)
   }
+  */
 
   render() {
     const gmapsUri = `https://www.google.com/maps/embed/v1/place?q=Mestizo%20Coffee%20House%2C%20631%20W%20North%20Temple%2C%20Salt%20Lake%20City%2C%20UT%2084116&key=${config.GMAPS_KEY}`
@@ -23,7 +24,7 @@ class Performances extends React.Component {
         <h2 className='content_heading'>Performances</h2>
         <div className='perform_flex'>
           <section className='perform_left'>
-            {gigs.length === 0 ? <Loading /> : null }
+            {gigs.length === 0 ? <p>A list of performances will appear here.</p> : null }
             {error 
               ? <p className='error'>There was an error, please try again.</p>
               : (

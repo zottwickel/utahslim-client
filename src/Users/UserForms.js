@@ -4,6 +4,7 @@ import './UserForms.css'
 import TokenService from '../services/token-service'
 import AuthApiService from '../services/auth-api-service'
 
+
 function handleLoginJwtAuth(event, context) {
   event.preventDefault()
   event.persist()
@@ -48,7 +49,7 @@ export function Login(props) {
       <LoginContext.Consumer>
         {context => { return (
           <div className='overlay' >
-            <form className='login_form' onSubmit={e => handleLoginJwtAuth(e, context)}>
+            <form className='login_form' onSubmit={e => context.beginSession(e)}>
               <h2>Login</h2>
               <p className='user_label'>Email:</p>
               <input className='user_input' name='email' id='email' type='text' placeholder='yourname@domain.com' />
@@ -125,7 +126,7 @@ export function Register(props) {
     <LoginContext.Consumer>
       {context => { return (
         <div className='overlay' >
-          <form className='register_form' onSubmit={e => handleRegister(e, context)}>
+          <form className='register_form' onSubmit={e => context.beginSession(e)}>
             <p className='user_label'>Full Name:</p>
             <input className='user_input' name='full_name' type='text' placeholder='Your Name' onChange={e => validateFullName(e)} />
             {full_name ? <p className='invalid'>{full_name}</p> : null }

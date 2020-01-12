@@ -24,7 +24,7 @@ class Article extends React.Component {
       .then(this.context.setComments)
       .catch(this.context.setError)
   }
-
+  /*
   componentDidMount() {
     const { article_id } = this.props.match.params
     this.context.clearError()
@@ -34,6 +34,7 @@ class Article extends React.Component {
   componentWillUnmount() {
     this.context.clearArticle()
   }
+  */
 
   handleComment(event) {
     event.preventDefault()
@@ -67,7 +68,7 @@ class Article extends React.Component {
     const articleComments = this.context.comments
     return (
       <div className='article'>
-        {!thisArticle ? <Loading /> : null }
+        {!thisArticle ? <p>An article will go here.</p> : null }
         {this.props.isLoggedIn ? <Link className='a_compose_link' to='/blog/compose'>Compose new article</Link>: null }
         <h3 className='a_subheading'>{thisArticle.title}</h3>
         <div className='a_flex'>

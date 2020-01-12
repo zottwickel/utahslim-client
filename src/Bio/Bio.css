@@ -36,6 +36,14 @@
   margin: 10px 0 0 10px;
 }
 
+.b_heading {
+  margin: 0;
+}
+
+.b_info {
+  margin-top: 0;
+}
+
 @media only screen and (min-width: 768px) {
   .bio_flex {
     display: flex;
@@ -49,5 +57,6 @@
     border-left: 2px solid rgb(150, 110, 36, 0.5);
     padding-left: 10px;
     margin-left: 10px;
+    width: 180%;
   }
 }
