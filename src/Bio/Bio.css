@@ -49,5 +49,6 @@
     border-left: 2px solid rgb(150, 110, 36, 0.5);
     padding-left: 10px;
     margin-left: 10px;
+    width: 150%;
   }
 }

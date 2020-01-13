@@ -40,6 +40,10 @@ class Bio extends React.Component {
             <p className='b_info'>Salt Lake City, UT featuring Sycamore Slim</p>
             <h4 className='b_heading'>Feldman's Deli</h4>
             <p className='b_info'>Salt Lake City, UT featuring Scott McKell</p>
+            <h3 className='content_subheading'>Awards</h3>
+            <p>Walnut Valley Festival 2011 NewSong for "Sister San Rafael"</p>
+            <p>Walnut Valley Festival 2015 NewSong for "This Rock Must Roll"</p>
+            <p>Walnut Valley Festival 2018 NewSong for "Bears Ears"</p>
             <h3 className='content_subheading'>Albums</h3>
             <p className='italics'>Water Wheel</p>
             <p className='italics'>Introducing Utah Slim</p>
