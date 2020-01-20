@@ -53,3 +53,10 @@ In the navigation bar at the top there are buttons for users to either log in or
 #### Footer
 
 In the footer contains a simple set of icons directing the user back to my linkedin, portfolio, and github in order for them to explore my professional skills and experience.
+
+## Images
+<img height='200' width='350' src='https://i.imgur.com/nuWrO90.jpg' alt='splash page' />
+<img height='200' width='350' src='https://i.imgur.com/RIkl12a.jpg' alt='blog page' />
+<img height='200' width='350' src='https://i.imgur.com/b3vmFA6.jpg' alt='register page' />
+<img height='200' width='350' src='https://i.imgur.com/5u0gQMJ.jpg' alt='performances page' />
+<img height='200' width='350' src='https://i.imgur.com/7eFRYC7.jpg' alt='videos page' />
