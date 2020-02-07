@@ -57,6 +57,10 @@
   font-size: 20px;
 }
 
+.n_message {
+  color: white;
+}
+
 @media only screen and (min-width: 584px) {
 
   .nav_title {

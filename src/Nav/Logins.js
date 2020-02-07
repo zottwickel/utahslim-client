@@ -15,6 +15,7 @@ function Logins(props) {
           <div className="user_logins">
             <button className='login_button' onClick={e => value.toggleLogin(e)}>Login</button>
             <button className='login_button' onClick={e => value.toggleRegister(e)}>Register</button>
+            <p className='n_message'>Log in or register to comment on or write blog articles.</p>
           </div>
         )
       } else {
