@@ -74,7 +74,7 @@ class Compose extends React.Component {
       <h3 className='a_subheading'>Compose Article</h3>
         <form className='compose_form' onSubmit={e => this.handleCompose(e)}>
           <p>Title:</p>
-          <input className='compose_input' id='title' type='text' name='title' placeholder='Article Title' onChange={e => this.validateTitle(e)} />
+          <input className='compose_input title' id='title' type='text' name='title' placeholder='Article Title' onChange={e => this.validateTitle(e)} />
           {this.state.title ? <p className='c_invalid'>{this.state.title}</p> : null }
           <p>Content:</p>
           <textarea className='compose_input a_textarea' id='content' name='content' onChange={e => this.validateContent(e)} placeholder={this.props.isLoggedIn ? 'Your article here' : 'How did you get here without being logged in? Please log in or register to post an article, don\'t be shy!'} /><br />

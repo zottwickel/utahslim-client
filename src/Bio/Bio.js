@@ -20,33 +20,42 @@ class Bio extends React.Component {
             <img className='partnered_photo' src={require('../images/scott-profile.jpg')} alt='Scott McKell with a saxophone' />
             <p className='b_content'>Scott is a classically and jazzically trained saxophonist who sits in with Utah Slim on his performances. He adds lead lines and solos with his saxophone and sometimes other instruments. His passionate, exciting playing is smooth and playful, as well as sensitive. Scott also sings vocal harmonies and adds a touch of color with his voice.</p>
             <p className='b_content'>Utah Slim will bring Scott along to play with him to play in any situation you would like. With exprience playing in many situations, Scott is able to support Slim's imagery and energy by adding what Slim calls "curly cues" to originals and to familiar cover songs.</p>
-            <h4>More Desert Poets profiles coming soon!</h4>
+            <h3 className='content_subheading'>Albums</h3>
+            <h4 className='section_heading'>Intorducing Utah Slim</h4>
+            <iframe title='introducingUtahSlim' width="100%" height="300" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/984369217&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <h4 className='section_heading'>Water Wheel</h4>
+            <iframe title='waterWheel' width="100%" height="300" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/984352843&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><br /><p> </p>
           </section>
           <section className='bio_flex_right'>
           <h3 className='content_subheading'>Previous concerts</h3>
             <h4 className='b_heading'>Walnut Valley Festival</h4>
             <p className='b_info'>Winfield, KS for NewSong stage #2</p>
+            <p className='b_info'><a className='outside_link' href='https://www.wvfest.com/'>www.wvfest.com</a></p>
             <h4 className='b_heading'>Summerfest</h4>
             <p className='b_info'>Logan, UT featuring Sycamore Slim</p>
+            <p className='b_info'><a className='outside_link' href='http://www.logansummerfest.com/'>www.logansummerfest.com</a></p>
             <h4 className='b_heading'>Rim Rock Patio</h4>
             <p className='b_info'>Torrey, UT featuring Sycamore Slim (see video)</p>
+            <p className='b_info'><a className='outside_link' href='http://therimrock.net/'>therimrock.net</a></p>
             <h4 className='b_heading'>Earthfest Star Parties</h4>
             <p className='b_info'>Kanab, UT</p>
+            <p className='b_info'><a className='outside_link' href='https://amazingearthfest.org/'>amazingearthfest.org</a></p>
             <h4 className='b_heading'>Harvest Days</h4>
             <p className='b_info'>Capitol Reef National Park</p>
+            <p className='b_info'><a className='outside_link' href='https://www.nps.gov/care/index.htm'>capitol reef website</a></p>
             <h4 className='b_heading'>IAMA Local Concert Series</h4>
             <p className='b_info'>Salt Lake City, UT (see video)</p>
+            <p className='b_info'><a className='outside_link' href='https://www.iamaweb.org/'>www.iamaweb.org</a></p>
             <h4 className='b_heading'>Utah State Fair</h4>
             <p className='b_info'>Salt Lake City, UT featuring Sycamore Slim</p>
+            <p className='b_info'><a className='outside_link' href='https://utahstatefair.com/welcome'>utahstatefair.com</a></p>
             <h4 className='b_heading'>Feldman's Deli</h4>
             <p className='b_info'>Salt Lake City, UT featuring Scott McKell</p>
+            <p className='b_info'><a className='outside_link' href='http://www.feldmansdeli.com/home'>www.feldmansdeli.com</a></p>
             <h3 className='content_subheading'>Awards</h3>
             <p>Walnut Valley Festival 2011 NewSong for "Sister San Rafael"</p>
             <p>Walnut Valley Festival 2015 NewSong for "This Rock Must Roll"</p>
             <p>Walnut Valley Festival 2018 NewSong for "Bears Ears"</p>
-            <h3 className='content_subheading'>Albums</h3>
-            <p className='italics'>Water Wheel</p>
-            <p className='italics'>Introducing Utah Slim</p>
           </section>
         </div>
       </div>

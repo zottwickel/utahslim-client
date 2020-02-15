@@ -29,11 +29,15 @@
 }
 
 .b_content {
-  margin-top: 10px;
+  margin-block-end: 10px;
 }
 
 .section_heading {
   margin: 10px 0 0 10px;
+}
+
+.b_info {
+  margin: 0;
 }
 
 @media only screen and (min-width: 768px) {

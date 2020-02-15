@@ -14,7 +14,6 @@ const GigsApiService = {
           : res.json()
       )
   },
-  //Future Admin pages will utilize these two
   postGig(description, gig_title, location, price, gig_date) {
     return fetch(`${config.API_ENDPOINT}/gigs`, {
       method: 'POST',
@@ -28,7 +27,7 @@ const GigsApiService = {
         location,
         price,
         gig_date,
-      }),
+      })
     })
       .then(res =>
         (!res.ok)
@@ -47,7 +46,7 @@ const GigsApiService = {
       .then(res =>
         (!res.ok)
         ? res.json().then(e => Promise.reject(e))
-        : res.json()
+        : null
       )
   }
 }

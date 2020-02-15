@@ -10,6 +10,18 @@
   margin: 0
 }
 
+.delete_button:hover {
+  cursor: pointer;
+}
+
+.delete_button {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border: 2px solid grey;
+  background-color: #964824;
+  color: white;
+}
+
 .p_list_head {
   border-bottom: 2px solid rgb(150, 110, 36);
   margin-bottom: 5px;
@@ -25,6 +37,37 @@
 
 .c_list {
   margin: 0;
+}
+
+.gig_input {
+  background-color: #f7cf83;
+  border: 1px solid #966e24;
+  font-size: 18px;
+  padding: 5px;
+  width: 67%;
+}
+
+.desc {
+  height: 66px;
+  resize: none;
+}
+
+.g_error {
+  color: red;
+}
+
+.gig_button {
+  margin: 16px 0 16px 0;
+  padding: 5px 10px;
+  border: 2px solid grey;
+  background-color: #966e24;
+  color: white;
+  cursor: pointer;
+}
+
+.gig_button:disabled {
+  cursor: not-allowed;
+  background-color: #998052;
 }
 
 @media only screen and (min-width: 768px) {
