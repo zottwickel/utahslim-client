@@ -9,7 +9,7 @@ class Nav extends React.Component {
     return (
       <div className="nav">
         <nav>
-          <Link className="nav_title" to={'/'}><h1>Utah Slim<span className='smaller'> and The Desert Poets</span></h1></Link>
+          <img className='nav_logo' src={require('../images/TrSlmFoot.png')} alt='six toed foot logo' /><Link className="nav_title" to={'/'}><h1>Utah Slim<span className='smaller'> and The Desert Poets</span></h1></Link>
           <Logins />
           <ul className='navlink_list'>
             <li className='navlink'><Link to={'/'}><span>Bio</span></Link></li>
