@@ -13,6 +13,7 @@ import { GigsProvider } from './contexts/GigsContext'
 import './App.css';
 
 class App extends React.Component {
+  
   static contextType = LoginContext
   
   componentDidMount() {

@@ -19,7 +19,12 @@ class Videos extends React.Component {
           <div className='video_box'>
             <h4 className='v_text'>Mestizo Coffee 2020</h4>
             <p className='v_text italics'>This Rock Must Roll - Utah Slim and the Desert Poets</p>
-            <iframe className='video' title='video7' src="https://www.youtube.com/embed/vgO3C0KHflc" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe className='video' title='video8' src="https://www.youtube.com/embed/vgO3C0KHflc" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          </div>
+          <div className='video_box'>
+            <h4 className='v_text'>Diversion Social Eatery 2020</h4>
+            <p className='v_text italics'>Higher Powder - Utah Slim and the Desert Poets</p>
+            <iframe className='video' title='videoXX' src='https://www.youtube.com/embed/VTjTdigpo3Q' frameBorder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowFullScreen></iframe>
           </div>
           <div className='video_box'>
             <h4 className='v_text'>Diversion Social Eatery 2020</h4>
@@ -29,7 +34,7 @@ class Videos extends React.Component {
           <div className='video_box'>
             <h4 className='v_text'>Mestizo Coffee 2020</h4>
             <p className='v_text italics'>Sea of Stone - Utah Slim and the Desert Poets</p>
-            <iframe className='video' title='video5' src='https://www.youtube.com/embed/Yr_YHwTs_OE' frameBorder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowFullScreen></iframe>
+            <iframe className='video' title='video5' src='https://www.youtube.com/embed/Eo35AbM5HVw' frameBorder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowFullScreen></iframe>
           </div>
           <div className='video_box'>
             <h4 className='v_text'>The Cabin 2020</h4>

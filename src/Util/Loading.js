@@ -3,6 +3,6 @@ import './Loading.css'
 
 export default function Loading() {
   return (
-    <h3 className='loading'>Loading...</h3>
+    <img className='loading' src={require('../images/Music-Preloader.gif')} alt='Loading...' />
   )
 }
