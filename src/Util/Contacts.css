@@ -26,6 +26,11 @@
   font-size: 25px;
   color: white;
   z-index: 2;
+  transition: color 0.3s;
+}
+
+.contact_icon:hover {
+  color: #282828;
 }
 
 .sms_button {

@@ -14,4 +14,9 @@
   color: #282828;
   font-size: 40px;
   vertical-align: top;
+  transition: color 0.8s;
+}
+
+.icon:hover {
+  color: #800020
 }
