@@ -4,7 +4,7 @@
   background-position: left 50% bottom -80px;
   background-repeat: no-repeat;
   position: relative;
-  height: 60%;
+  height: 300px;
 }
 
 .parallax::after {
