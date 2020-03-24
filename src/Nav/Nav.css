@@ -1,7 +1,7 @@
 .nav {
   padding: 20px 20px 0 20px;
   margin: 0;
-  background-image: url(https://www.visitutah.com/media/15894221/websocial_brycecanyon_darksky-stock-photo-natural-bridge-at-night-101788281-1.jpg?anchor=center&mode=crop&width=767&height=511&rnd=131877745520000000&quality=86);
+  background-image: url(https://cdn.pixabay.com/photo/2016/12/22/15/38/scenic-1925703_960_720.jpg);
   background-position: right -200px bottom -150px;
   background-repeat: no-repeat;
 }
@@ -72,7 +72,7 @@
     font-size: 50px;
   }
   .nav {
-    background-image: url(https://www.visitutah.com/media/15894221/websocial_brycecanyon_darksky-stock-photo-natural-bridge-at-night-101788281-1.jpg?anchor=center&mode=crop&width=767&height=511&rnd=131877745520000000&quality=86);
+    background-image: url(https://cdn.pixabay.com/photo/2016/12/22/15/38/scenic-1925703_960_720.jpg);
     background-size: 100%;
     background-position-y: -400px;
     background-position: 0;

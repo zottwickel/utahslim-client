@@ -10,7 +10,6 @@ Boilerplate for embedding
           </div>
 */
 class Videos extends React.Component {
-
   render() {
     return (
       <div className="Videos">
@@ -24,7 +23,7 @@ class Videos extends React.Component {
           <div className='video_box'>
             <h4 className='v_text'>Diversion Social Eatery 2020</h4>
             <p className='v_text italics'>Higher Powder - Utah Slim and the Desert Poets</p>
-            <iframe className='video' title='videoXX' src='https://www.youtube.com/embed/VTjTdigpo3Q' frameBorder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowFullScreen></iframe>
+            <iframe className='video' title='video7' src="https://www.youtube.com/embed/VTjTdlgpo3Q" frameBorder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowFullScreen></iframe>
           </div>
           <div className='video_box'>
             <h4 className='v_text'>Diversion Social Eatery 2020</h4>
