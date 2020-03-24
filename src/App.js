@@ -22,46 +22,50 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        {this.context.login ? <Login /> : null}
-        {this.context.register ? <Register /> : null}      
-        <Nav />
-        <main className='content'>
-          <GigsProvider>
-            <Switch>
-              <Route 
-                exact path='/bio'
-                render={(props) => {
-                  return <Bio {...props} />
-                }}
-              />
-              <Route
-                exact path='/'
-                render={(props) => {
-                  return <Bio {...props} />
-                }}
-              />
-              <Route
-                exact path='/videos'
-                render={(props) => {
-                  return <Videos {...props} />
-                }}
-              />
-              <Route
-                exact path='/performances'
-                render={(props) => {
-                  return <Performances {...props} />
-                }}
-              />
-              <Route
-                path='/blog'
-                render={(props) => {
-                  return <Blog {...props} />
-                }}
-              />
-            </Switch>
-          </GigsProvider>
-          <Footer />
-        </main>
+        <div className='wrapper'>
+          {this.context.login ? <Login /> : null}
+          {this.context.register ? <Register /> : null}      
+          <Nav />
+          <div className='static-bkd'>
+            <main className='content'>
+              <GigsProvider>
+                <Switch>
+                  <Route 
+                    exact path='/bio'
+                    render={(props) => {
+                      return <Bio {...props} />
+                    }}
+                  />
+                  <Route
+                    exact path='/'
+                    render={(props) => {
+                      return <Bio {...props} />
+                    }}
+                  />
+                  <Route
+                    exact path='/videos'
+                    render={(props) => {
+                      return <Videos {...props} />
+                    }}
+                  />
+                  <Route
+                    exact path='/performances'
+                    render={(props) => {
+                      return <Performances {...props} />
+                    }}
+                  />
+                  <Route
+                    path='/blog'
+                    render={(props) => {
+                      return <Blog {...props} />
+                    }}
+                  />
+                </Switch>
+              </GigsProvider>
+              <Footer/>
+            </main>
+          </div>
+        </div>
         <Mail />
         <Phone />
         <Sms />

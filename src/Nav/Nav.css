@@ -1,9 +1,29 @@
 .nav {
   padding: 20px 20px 0 20px;
   margin: 0;
-  background-image: url(https://cdn.pixabay.com/photo/2016/12/22/15/38/scenic-1925703_960_720.jpg);
-  background-position: right -250px bottom -20px;
+  background-position: left 50% bottom -80px;
   background-repeat: no-repeat;
+  position: relative;
+  height: 60%;
+}
+
+.parallax::after {
+  content: ' ';
+  position: absolute;
+  top: -22%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 300%;
+  background-position-x: 50%;
+  z-index: -1;
+  height: 200%;
+}
+
+.bg1::after{
+  background-image: url(https://cdn.pixabay.com/photo/2016/12/22/15/38/scenic-1925703_960_720.jpg);
+  background-repeat: none;
 }
 
 .nav_title {
@@ -65,17 +85,25 @@
   display: none;
 }
 
+@media only screen and (min-width: 425px) {
+  .parallax::after {
+    top: -30%;
+    background-size: 250%;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .parallax::after {
+    top: -40%;
+    background-size: 200%
+  }
+}
+
 
 @media only screen and (min-width: 700px) {
 
   .nav_title {
     font-size: 50px;
-  }
-  .nav {
-    background-image: url(https://cdn.pixabay.com/photo/2016/12/22/15/38/scenic-1925703_960_720.jpg);
-    background-size: 100%;
-    background-position: 0;
-    background-size: 120%;
   }
 
   .navlink {
@@ -92,6 +120,15 @@
   .smaller {
     font-size: 30px;
   }
+
+  .nav {
+    height: 400px;
+  }
+
+  .parallax::after {
+    top: -30%;
+    background-size: 150%;
+  }
   
 }
 
@@ -102,6 +139,8 @@
     width: auto;
     margin-bottom: -50px;
   }
+
+  
 }
 
 @media only screen and (min-width: 918px) {
@@ -110,6 +149,20 @@
     height: 300px;
     width: auto;
     margin-bottom: -150px;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .parallax::after {
+    top: -15%;
+    background-size: 100%;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .parallax::after {
+    top: -50%;
   }
 }
 

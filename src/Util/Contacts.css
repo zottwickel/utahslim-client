@@ -25,6 +25,7 @@
 .contact_icon {
   font-size: 25px;
   color: white;
+  z-index: 2;
 }
 
 .sms_button {

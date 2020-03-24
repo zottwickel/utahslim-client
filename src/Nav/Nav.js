@@ -8,7 +8,7 @@ class Nav extends React.Component {
   render() {
     return (
       <div className="nav">
-        <nav>
+        <nav className="parallax bg1">
           <img className='nav_logo' src={require('../images/TrSlmFoot.png')} alt='six toed foot logo' /><Link className="nav_title" to={'/'}><h1>Utah Slim<span className='smaller'> and The Desert Poets</span></h1></Link>
           <Logins />
           <ul className='navlink_list'>
