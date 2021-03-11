@@ -14,7 +14,7 @@ import './App.css';
 
 class App extends React.Component {
   
-  static contextType = LoginContext
+  static contextType = LoginContext;
   
   componentDidMount() {
     this.context.setSession()
