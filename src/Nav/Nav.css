@@ -1,29 +1,13 @@
 .nav {
   padding: 20px 20px 0 20px;
   margin: 0;
-  background-position: left 50% bottom -80px;
   background-repeat: no-repeat;
   position: relative;
   height: 300px;
-}
-
-.parallax::after {
-  content: ' ';
-  position: absolute;
-  top: -22%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: translateZ(-1px) scale(1.5);
-  background-size: 300%;
-  background-position-x: 50%;
-  z-index: -1;
-  height: 200%;
-}
-
-.bg1::after{
-  background-image: url(https://cdn.pixabay.com/photo/2016/12/22/15/38/scenic-1925703_960_720.jpg);
-  background-repeat: none;
+  background-image: url(../images/capitol-reef.jpg);
+  background-attachment: fixed;
+  background-position: center top 20%;
+  background-size: cover;
 }
 
 .nav_title {
