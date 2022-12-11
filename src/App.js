@@ -48,18 +48,6 @@ class App extends React.Component {
                       return <Videos {...props} />
                     }}
                   />
-                  <Route
-                    exact path='/performances'
-                    render={(props) => {
-                      return <Performances {...props} />
-                    }}
-                  />
-                  <Route
-                    path='/blog'
-                    render={(props) => {
-                      return <Blog {...props} />
-                    }}
-                  />
                 </Switch>
               </GigsProvider>
               <Footer/>

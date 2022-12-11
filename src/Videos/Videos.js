@@ -15,7 +15,7 @@ class Videos extends React.Component {
       <div className="Videos">
         <h2 className='content_heading'>Videos</h2>
         <div className='video_flex'>
-          <div className='video_box'>
+          {/* <div className='video_box'>
             <h4 className='v_text'>Mestizo Coffee 2020</h4>
             <p className='v_text italics'>This Rock Must Roll - Utah Slim and the Desert Poets</p>
             <iframe className='video' title='video8' src="https://www.youtube.com/embed/vgO3C0KHflc" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
@@ -49,7 +49,7 @@ class Videos extends React.Component {
             <h4 className='v_text'>Summerfest 2018</h4>
             <p className='v_text italics'>Fisher Blues - Delta blues standard</p>
             <iframe className='video' title="video2" src="https://www.youtube.com/embed/CIr9k-0roo4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-          </div>
+          </div> */}
           <div className='video_box'>
             <h4 className='v_text'>Rim Rock Patio - Torrey, UT 2019</h4>
             <p className='v_text italics'>Navajo Rug - Tom Russell / Ian Tyosn</p>

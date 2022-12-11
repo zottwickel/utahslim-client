@@ -9,17 +9,25 @@ class Bio extends React.Component {
         <h2 className='content_heading'>Biography</h2>
         <div className='bio_flex'>
           <section className='bio_flex_left'>
-            <h4 className='section_heading'>About Utah Slim</h4>
             <img className='profile_photo' src={require('../images/rex-rocks.jpg')} alt='Singer/Songwriter Utah Slim' align='top' />
-            <p className='b_content'>Rex Seaburry AKA Utah Slim writes and sings about the beauty and wonder of Utah's Colorado Plateau, the Folks who live there, their culture, and the struggle for it's future. His drop D picking and wit add depth and style to his performances. Currently working on his 2nd album, <span className='italics'>Water Wheel</span>, Slim has discovered partnerships with accomplished musicians who add  dynamic voices and instruments that broaden and deepen his work. Together, these musicians are known as Utah Slim and the desert poets. This group is currently a duo involving guitar, vocal harmony, and woodwinds. Audiences love their sound.</p>
+            <p className='b_content'>This music is strong, upbeat, and engaging. The lyrics get to the point with strong
+        sentiments about what is going down today in our natural world. They sing about love
+        and justice, too. People like what they hear. Their music is varied from acoustic
+        rock to traditional folk. Their harmonies are beautiful and strong and their arrangements
+        tight. Alisa, Joey, and Mandy have accomplished voices. Sophie's sax is a unique and
+        exciting addition to their americana/folk sound. The hooks are catchy as in Higher Powder,
+        a song about snowboarding. Their lyrics are subtle like in their song Pale Blue Dot. Many
+        songs are emotionally engaging such as in Sister San Rafel. People listen to their beat
+        and some dance along. These are four well-trained and experienced players! Please be sure
+        to take a look at their bios for more information.</p>
             <p className='b_content'>Rex worked as a couselor, gardener, and trail guide for the Deer Creek Center out of Boulder, Utah in his early twenties. He came to know the "wild" places of the Escalante River System and Utah's Grand Staircase as home. It has taken him a while to come up with lyrics and music that express his experience with and connection to this land. Utah Slim and the Desert Poets are dedicated to celebrating the wonder of our natural world, to reaching heart, mind, wit and soul with lyric, melody, and harmony. Our mission is to lend our work to the world wide effort to value our planet as our home and to giving all future children a chance.</p>
-            <p className='b_content'>Go ahead and reach out to Slim via his <a className='outside_link' href='mailto:utahslim11@gmail.com'>email</a>, or reach out via text/call at <a className='outside_link' href='tel:801-649-5097'>801-649-5097</a>. He would love to get in touch with you about how to best fill your musical needs.</p>
+            <p className='b_content'>Go ahead and reach out to Slim via his <a className='outside_link' href='mailto:utahslim11@gmail.com'>email</a>, or reach out via text at <a className='outside_link' href='tel:801-649-5097'>801-649-5097</a>. He would love to get in touch with you about how to best fill your musical needs.</p>
             <p className='b_content'>Please take a look at our ever-growing videos section. We are currently in the process of recording, editing, and uploading more videos for you to check us out and see what we can do.</p>
-            <h3 className='content_subheading'>Introducing the Desert Poets</h3>
+            {/* <h3 className='content_subheading'>Introducing the Desert Poets</h3>
             <h4 className='section_heading'>Scott McKell</h4>
             <img className='partnered_photo' src={require('../images/scott-profile.jpg')} alt='Scott McKell with a saxophone' />
             <p className='b_content'>Scott is a classically and jazzically trained saxophonist who sits in with Utah Slim on his performances. He adds lead lines and solos with his saxophone and sometimes other instruments. His passionate, exciting playing is smooth and playful, as well as sensitive. Scott also sings vocal harmonies and adds a touch of color with his voice.</p>
-            <p className='b_content'>Utah Slim will bring Scott along to play with him to play in any situation you would like. With exprience playing in many situations, Scott is able to support Slim's imagery and energy by adding what Slim calls "curly cues" to originals and to familiar cover songs.</p>
+            <p className='b_content'>Utah Slim will bring Scott along to play with him to play in any situation you would like. With exprience playing in many situations, Scott is able to support Slim's imagery and energy by adding what Slim calls "curly cues" to originals and to familiar cover songs.</p> */}
             <h3 className='content_subheading'>Albums</h3>
             <h4 className='section_heading'>Intorducing Utah Slim</h4>
             <iframe title='introducingUtahSlim' width="100%" height="300" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/984369217&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
